@@ -85,18 +85,49 @@ body {
     background-color: white;
 }
 
-#reset-board {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  background: #4cafef;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+/* --- Button Styles --- */
+.button-container {
+    margin-top: 20px;
 }
 
-#reset-board:hover {
-  background: #3a9ad9;
-  transform: scale(1.05);
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 0 5px; /* Add margin between buttons */
+}
+
+.button-container button:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.button-container button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#undo-button {
+    background-color: #2196F3; /* Blue */
+}
+#undo-button:hover:not(:disabled) {
+    background-color: #1976D2;
+}
+
+#redo-button {
+    background-color: #4CAF50; /* Green */
+}
+#redo-button:hover:not(:disabled) {
+    background-color: #388E3C;
+}
+
+#reset-board {
+    background-color: #f44336; /* Red */
+}
+#reset-board:hover:not(:disabled) {
+    background-color: #d32f2f;
 }
