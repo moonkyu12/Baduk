@@ -131,3 +131,14 @@ body {
 #reset-board:hover:not(:disabled) {
     background-color: #d32f2f;
 }
+
+.top-button-container {
+    margin-bottom: 20px; /* Space below the button */
+}
+
+#save-button {
+    background-color: #607D8B; /* Grey */
+}
+#save-button:hover:not(:disabled) {
+    background-color: #455A64;
+}
